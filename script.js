@@ -13,29 +13,41 @@ const result= document.querySelector("#outputSection");
 const clearOp= document.querySelector("#clearOutputButton");
 
 
-
+// Name
 function alertName(){
-    alert("Muhammad Abdul Wadood Afzal")
+    let naam = "Muhammad Abdul Wadood Afzal"
+    alert(naam);
 }
 
+
+
+// Number
 function alertNum(){
-    alert(923437920342);
+    let phone= '+92 343 7920342'
+    alert(phone);
 }
 
+
+
+// Variable Number
 function addVariable (){
-ogStatement.innerText="Variable Number";
-result.innerText="Variable Number";
+    let varNum = "Variable Number"
+ogStatement.innerText=varNum;
+result.innerText=varNum;
 
 }
 
+
+// Camel Case
 function camelCase(){
-    ogStatement.innerText="variableNumber";
-    result.innerText="variableNumber";
-    
+let strg = "variableNumber"
+    ogStatement.innerText=strg;
+    result.innerText=strg;
 }
 
-function addition(){
 
+// Addition
+function addition(){
     let b =3;
     let a =31;
     let sum= a+b;
@@ -43,30 +55,41 @@ function addition(){
     result.innerText=`Sum of Numbers is ${sum}` ;
 }
 
-function subtraction(){
 
+
+// Subtraction
+function subtraction(){
     let b =3;
     let a =31;
     let sub= a-b;
-    text=ogStatement.innerHTML= `a = ${a} - b = ${b} <br> The Subtraction of a and b is given below `;
-    output= result.innerText=`Subtraction of Numbers is ${sub} ` ;
+    ogStatement.innerHTML= `a = ${a} and b = ${b} <br> The Subtraction of a and b is given below `;
+    result.innerText=`Subtraction of Numbers is ${sub} ` ;
 }
-function division(){
 
+
+// division
+function division(){
     let b =3;
     let a =31;
     let div= a/b;
-    ogStatement.innerHTML= `a = ${a} / b = ${b} <br> The division of a and b is given below`;
+    ogStatement.innerHTML= `a = ${a} and b = ${b} <br> The division of a and b is given below`;
     result.innerText=`Division of Numbers is ${div}` ;
 }
-function multiply(){
 
+
+// Multiplication
+function multiply(){
     let b =3;
     let a =31;
     let mul= a*b;
-    text=ogStatement.innerHTML= `a = ${a} * b = ${b} <br> The Multiplication of a and b is given below`;
-    output= result.innerText=`Multiplication of Numbers is ${mul}` ;
+    ogStatement.innerHTML= `a = ${a} and b = ${b} <br> The Multiplication of a and b is given below`;
+    result.innerText=`Multiplication of Numbers is ${mul}` ;
 }
+
+
+
+
+// Solve this Expression
 function anyTwo(){
     let a = 2;
     let b = 3;
@@ -78,17 +101,21 @@ function anyTwo(){
     result.innerText=`Answer of above Expression is ${equal}` ;
 }
 
+
+
+// Clear Orignal Button
 function clearBtn() {
     ogStatement.innerText=" ";
     
 }
 
-
+// Clear Output button
 function clearOutput() {
     result.innerText=" ";
     
 }
 
+// All Clear Button
 function clearAll()
 {
     ogStatement.innerText=" ";
